@@ -1,0 +1,14 @@
+cd ~/.ssh; ssh-keygen -t rsa -C "1978619104@qq.com"; cat id_rsa.pub
+
+mkdir php
+cd php
+ssh -T git@github.com
+git status
+git clone https://github.com/luoluo19550418/php.git
+# 增加文件，放到php本地目录下即可
+# 删除文件，从php本地目录下删除即可
+git config --global user.name luoluo19550418
+git config --global user.email "1978619104@qq.com"
+git add .
+git commit -m 20210221
+git push
